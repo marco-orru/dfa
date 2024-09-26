@@ -79,7 +79,7 @@ public final class StudentIdInv {
         var i = 0;
 
         while (i < s.length()) {
-            final var c = s.charAt(i++);
+            final var c = s.charAt(i);
 
             if (!isValidCharacter(c))
                 throw new InputMismatchException("Invalid character at index %d in input string %s".formatted(i, s));
@@ -133,6 +133,8 @@ public final class StudentIdInv {
                 default:
                     throw new IllegalStateException();
             }
+
+            i++;
         }
 
         return state == States.SURNAME_A_EVEN || state == States.SURNAME_B_ODD;
@@ -142,6 +144,9 @@ public final class StudentIdInv {
         if (args.length < 1)
             throw new InputMismatchException("An input string must be provided");
 
-        System.out.println("The input string is " + (scan(args[0]) ? "valid" : "not valid"));
-    }
+        try {
+            System.out.println("The input string is " + (scan(args[0]) ? "valid" : "not valid"));
+        } catch (InputMismatchException e) {
+            System.err.println(e.getMessage());
+        }    }
 }

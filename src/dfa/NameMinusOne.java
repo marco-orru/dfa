@@ -41,7 +41,7 @@ public final class NameMinusOne {
 
         while (i < s.length()) {
             final var c = s.charAt(i);
-            final var nc = name.charAt(i++);
+            final var nc = name.charAt(i);
 
             switch (state) {
                 case VALID:
@@ -58,6 +58,8 @@ public final class NameMinusOne {
                 default:
                     throw new IllegalStateException();
             }
+
+            i++;
         }
 
         return state == States.VALID || state == States.REPLACEMENT_OCCURRED;
