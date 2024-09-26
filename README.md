@@ -64,5 +64,6 @@ The following DFAs are implemented:
 + `StudentIdSpace`: checks whether a string is a valid student identifier followed by a surname, with optional whitespaces before, after and/or in-between.
 + `StudentIdInv`: checks whether a string is a surname immediately followed by a valid student identifier.
 + `LastThreeA`: checks whether the last three characters of a string contains at least an `'a'` character.
++ `NameMinusOne`: checks whether a string is composed by a name (passed as the second argument) with at most one letter replaced.
 
 More information about the purpose of each DFA is included in the class documentation comments.
