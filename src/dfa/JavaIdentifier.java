@@ -44,11 +44,10 @@ public final class JavaIdentifier {
     }
 
     /**
-     * Scans the input string and checks whether it is a valid Java identifier
+     * Scans the input string and checks whether the string is valid for the automaton.
      *
      * @param s the input string to be scanned
-     * @return {@code true} if the string is a valid Java identifier;
-     *         otherwise, {@code false}
+     * @return {@code true} if the string is valid; otherwise, {@code false}
      */
     private static boolean scan(String s) {
         var state = States.EMPTY_STRING;  // Start state

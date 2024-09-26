@@ -4,12 +4,11 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="499b4dfc-ddf0-4915-b202-61bb156dd8b7" name="Changes" comment="JavaIdentifier">
-      <change afterPath="$PROJECT_DIR$/src/dfa/StudentId.java" afterDir="false" />
+    <list default="true" id="499b4dfc-ddf0-4915-b202-61bb156dd8b7" name="Changes" comment="StudentId">
+      <change afterPath="$PROJECT_DIR$/src/dfa/StudentIdSpace.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/README.md" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/dfa/NotThreeZero.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/dfa/NotThreeZero.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/dfa/ThreeZero.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/dfa/ThreeZero.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/dfa/StudentId.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/dfa/StudentId.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -55,6 +54,7 @@
     "Application.JavaIdentifier.executor": "Debug",
     "Application.NotThreeZero.executor": "Run",
     "Application.StudentId.executor": "Run",
+    "Application.StudentIdSpace.executor": "Run",
     "Application.ThreeZero.executor": "Run",
     "Downloaded.Files.Path.Enabled": "false",
     "Repository.Attach.Annotations": "false",
@@ -74,6 +74,27 @@
     "vue.rearranger.settings.migration": "true"
   }
 }]]></component>
+  <component name="RunManager">
+    <configuration name="StudentIdSpace" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="dfa.StudentIdSpace" />
+      <module name="dfa" />
+      <option name="PROGRAM_PARAMETERS" value="&quot;123456 Bianchi&quot;" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="dfa.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <recent_temporary>
+      <list>
+        <item itemvalue="Application.StudentIdSpace" />
+      </list>
+    </recent_temporary>
+  </component>
   <component name="SharedIndexes">
     <attachedChunks>
       <set>
@@ -90,7 +111,7 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1727345624468</updated>
-      <workItem from="1727345625370" duration="7236000" />
+      <workItem from="1727345625370" duration="8518000" />
     </task>
     <task id="LOCAL-00001" summary="ThreeZero">
       <option name="closed" value="true" />
@@ -124,7 +145,39 @@
       <option name="project" value="LOCAL" />
       <updated>1727356972942</updated>
     </task>
-    <option name="localTasksCounter" value="5" />
+    <task id="LOCAL-00005" summary="StudentId">
+      <option name="closed" value="true" />
+      <created>1727358401506</created>
+      <option name="number" value="00005" />
+      <option name="presentableId" value="LOCAL-00005" />
+      <option name="project" value="LOCAL" />
+      <updated>1727358401506</updated>
+    </task>
+    <task id="LOCAL-00006" summary="StudentId">
+      <option name="closed" value="true" />
+      <created>1727358414178</created>
+      <option name="number" value="00006" />
+      <option name="presentableId" value="LOCAL-00006" />
+      <option name="project" value="LOCAL" />
+      <updated>1727358414178</updated>
+    </task>
+    <task id="LOCAL-00007" summary="StudentId">
+      <option name="closed" value="true" />
+      <created>1727358433327</created>
+      <option name="number" value="00007" />
+      <option name="presentableId" value="LOCAL-00007" />
+      <option name="project" value="LOCAL" />
+      <updated>1727358433327</updated>
+    </task>
+    <task id="LOCAL-00008" summary="StudentId">
+      <option name="closed" value="true" />
+      <created>1727359168601</created>
+      <option name="number" value="00008" />
+      <option name="presentableId" value="LOCAL-00008" />
+      <option name="project" value="LOCAL" />
+      <updated>1727359168601</updated>
+    </task>
+    <option name="localTasksCounter" value="9" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -135,6 +188,18 @@
     <MESSAGE value="NotThreeZero" />
     <MESSAGE value="NotThreeZero (fixed docs)" />
     <MESSAGE value="JavaIdentifier" />
-    <option name="LAST_COMMIT_MESSAGE" value="JavaIdentifier" />
+    <MESSAGE value="StudentId" />
+    <option name="LAST_COMMIT_MESSAGE" value="StudentId" />
+  </component>
+  <component name="XDebuggerManager">
+    <breakpoint-manager>
+      <breakpoints>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/dfa/StudentIdSpace.java</url>
+          <line>158</line>
+          <option name="timeStamp" value="3" />
+        </line-breakpoint>
+      </breakpoints>
+    </breakpoint-manager>
   </component>
 </project>

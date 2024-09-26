@@ -42,11 +42,10 @@ public final class ThreeZero {
     }
 
     /**
-     * Scans the input string and checks if it contains three consecutive {@code '0'} characters.
+     * Scans the input string and checks whether the string is valid for the automaton.
      *
      * @param s the input string to be scanned
-     * @return {@code true} if the string contains three consecutive {@code '0'} characters;
-     *         otherwise, {@code false}
+     * @return {@code true} if the string is valid; otherwise, {@code false}
      */
     private static boolean scan(String s) {
         var state = States.NOT_FOUND;  // Start state
