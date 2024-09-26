@@ -10,32 +10,8 @@ import java.util.InputMismatchException;
  */
 public final class JavaIdentifier {
     /**
-     * Defines the states of the automaton.
-     */
-    private enum States {
-        /**
-         * The identifier is empty.
-         */
-        EMPTY_STRING,
-
-        /**
-         * The identifier starts with a digit (thus, it's invalid).
-         */
-        FIRST_DIGIT,
-
-        /**
-         * The identifier is a sequence of underscores.
-         */
-        UNDERSCORE_PREFIX,
-
-        /**
-         * The identifier is a valid Java identifier.
-         */
-        VALID_ID,
-    }
-
-    /**
      * Checks whether the specified character belongs to the automaton alphabet.
+     *
      * @param c The character to be checked.
      * @return {@code true} if the character is valid; otherwise, {@code false}.
      */
@@ -79,7 +55,7 @@ public final class JavaIdentifier {
 
         return state == States.VALID_ID;
     }
-    
+
     public static void main(String[] args) {
         if (args.length < 1)
             throw new InputMismatchException("An input string must be provided");
@@ -88,5 +64,31 @@ public final class JavaIdentifier {
             System.out.println("The input string is " + (scan(args[0]) ? "valid" : "not valid"));
         } catch (InputMismatchException e) {
             System.err.println(e.getMessage());
-        }    }
+        }
+    }
+
+    /**
+     * Defines the states of the automaton.
+     */
+    private enum States {
+        /**
+         * The identifier is empty.
+         */
+        EMPTY_STRING,
+
+        /**
+         * The identifier starts with a digit (thus, it's invalid).
+         */
+        FIRST_DIGIT,
+
+        /**
+         * The identifier is a sequence of underscores.
+         */
+        UNDERSCORE_PREFIX,
+
+        /**
+         * The identifier is a valid Java identifier.
+         */
+        VALID_ID,
+    }
 }

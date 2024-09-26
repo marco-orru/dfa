@@ -15,52 +15,8 @@ import java.util.InputMismatchException;
  */
 public final class StudentIdInv {
     /**
-     * Defines the states of the automaton.
-     */
-    private enum States {
-        /**
-         * Initial state: the string is yet to be scanned.
-         */
-        INIT,
-
-        /**
-         * The string starts with a surname whose first letter is between {@code 'A'} and {@code 'K'}.
-         */
-        SURNAME_A,
-
-        /**
-         * The string starts with a surname whose first letter is between {@code 'L'} and {@code 'Z'}.
-         */
-        SURNAME_B,
-
-        /**
-         * The last scanned substring is an even student id after a surname whose first letter is between {@code 'A'} and {@code 'K'}.
-         */
-        SURNAME_A_EVEN,
-
-        /**
-         * The last scanned substring is an odd student id after a surname whose first letter is between {@code 'A'} and {@code 'K'}.
-         */
-        SURNAME_A_ODD,
-
-        /**
-         * The last scanned substring is an even student id after a surname whose first letter is between {@code 'L'} and {@code 'Z'}.
-         */
-        SURNAME_B_EVEN,
-
-        /**
-         * The last scanned substring is an odd student id after a surname whose first letter is between {@code 'L'} and {@code 'Z'}.
-         */
-        SURNAME_B_ODD,
-
-        /**
-         * The string is invalid.
-         */
-        INVALID
-    }
-
-    /**
      * Checks whether the specified character belongs to the automaton alphabet.
+     *
      * @param c The character to be checked.
      * @return {@code true} if the character is valid; otherwise, {@code false}.
      */
@@ -148,5 +104,51 @@ public final class StudentIdInv {
             System.out.println("The input string is " + (scan(args[0]) ? "valid" : "not valid"));
         } catch (InputMismatchException e) {
             System.err.println(e.getMessage());
-        }    }
+        }
+    }
+
+    /**
+     * Defines the states of the automaton.
+     */
+    private enum States {
+        /**
+         * Initial state: the string is yet to be scanned.
+         */
+        INIT,
+
+        /**
+         * The string starts with a surname whose first letter is between {@code 'A'} and {@code 'K'}.
+         */
+        SURNAME_A,
+
+        /**
+         * The string starts with a surname whose first letter is between {@code 'L'} and {@code 'Z'}.
+         */
+        SURNAME_B,
+
+        /**
+         * The last scanned substring is an even student id after a surname whose first letter is between {@code 'A'} and {@code 'K'}.
+         */
+        SURNAME_A_EVEN,
+
+        /**
+         * The last scanned substring is an odd student id after a surname whose first letter is between {@code 'A'} and {@code 'K'}.
+         */
+        SURNAME_A_ODD,
+
+        /**
+         * The last scanned substring is an even student id after a surname whose first letter is between {@code 'L'} and {@code 'Z'}.
+         */
+        SURNAME_B_EVEN,
+
+        /**
+         * The last scanned substring is an odd student id after a surname whose first letter is between {@code 'L'} and {@code 'Z'}.
+         */
+        SURNAME_B_ODD,
+
+        /**
+         * The string is invalid.
+         */
+        INVALID
+    }
 }

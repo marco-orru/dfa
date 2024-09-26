@@ -7,33 +7,8 @@ import java.util.InputMismatchException;
  */
 public final class ThreeZero {
     /**
-     * Defines the states of the automaton.
-     */
-    private enum States {
-        /**
-         * The last character found is {@code '1'}, and no sequence of three or more consecutive {@code '0'} characters
-         * has been found.
-         */
-        NOT_FOUND,
-
-        /**
-         * A {@code '0'} character has been found.
-         */
-        FOUND_ONE,
-
-        /**
-         * A sequence of two consecutive {@code '0'} characters have been found.
-         */
-        FOUND_TWO,
-
-        /**
-         * A sequence of three consecutive {@code '0'} characters has been found.
-         */
-        FOUND_THREE
-    }
-
-    /**
      * Checks whether the specified character belongs to the automaton alphabet.
+     *
      * @param c The character to be checked.
      * @return {@code true} if the character is valid; otherwise, {@code false}.
      */
@@ -89,5 +64,32 @@ public final class ThreeZero {
             System.out.println("The input string is " + (scan(args[0]) ? "valid" : "not valid"));
         } catch (InputMismatchException e) {
             System.err.println(e.getMessage());
-        }    }
+        }
+    }
+
+    /**
+     * Defines the states of the automaton.
+     */
+    private enum States {
+        /**
+         * The last character found is {@code '1'}, and no sequence of three or more consecutive {@code '0'} characters
+         * has been found.
+         */
+        NOT_FOUND,
+
+        /**
+         * A {@code '0'} character has been found.
+         */
+        FOUND_ONE,
+
+        /**
+         * A sequence of two consecutive {@code '0'} characters have been found.
+         */
+        FOUND_TWO,
+
+        /**
+         * A sequence of three consecutive {@code '0'} characters has been found.
+         */
+        FOUND_THREE
+    }
 }

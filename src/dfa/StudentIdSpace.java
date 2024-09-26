@@ -18,52 +18,8 @@ import java.util.InputMismatchException;
  */
 public final class StudentIdSpace {
     /**
-     * Defines the states of the automaton.
-     */
-    private enum States {
-        /**
-         * Initial state: the string is yet to be scanned or starts with a space.
-         */
-        INIT_OR_SPACE,
-
-        /**
-         * The last scanned character is an even digit: the student id is being scanned and (for now) it's even.
-         */
-        EVEN,
-
-        /**
-         * The last scanned character is an odd digit: the student id is being scanned and (for now) it's odd.
-         */
-        ODD,
-
-        /**
-         * The last scanned substring is a sequence of whitespace characters following an even student id.
-         */
-        SPACE_AFTER_EVEN_ID,
-
-        /**
-         * The last scanned substring is a sequence of whitespace characters following an odd student id.
-         */
-        SPACE_AFTER_ODD_ID,
-
-        /**
-         * The string is valid: after the student id there is a surname that starts with the correct letter.
-         */
-        VALID,
-
-        /**
-         * The last scanned substring is a sequence of whitespace characters following the surname.
-         */
-        TRAILING_SPACE,
-
-        /**
-         * The string is not valid.
-         */
-        NOT_VALID
-    }
-
-    /**
      * Checks whether the specified character belongs to the automaton alphabet.
+     *
      * @param c The character to be checked.
      * @return {@code true} if the character is valid; otherwise, {@code false}.
      */
@@ -93,8 +49,7 @@ public final class StudentIdSpace {
                         // No cast to int, as ascii digits are even and odd as their numeric counterparts.
                         if (c % 2 == 0) state = States.EVEN;
                         else state = States.ODD;
-                    }
-                    else if (Character.isLetter(c)) {
+                    } else if (Character.isLetter(c)) {
                         state = States.NOT_VALID;
                     }
                     break;
@@ -161,5 +116,51 @@ public final class StudentIdSpace {
             System.out.println("The input string is " + (scan(args[0]) ? "valid" : "not valid"));
         } catch (InputMismatchException e) {
             System.err.println(e.getMessage());
-        }    }
+        }
+    }
+
+    /**
+     * Defines the states of the automaton.
+     */
+    private enum States {
+        /**
+         * Initial state: the string is yet to be scanned or starts with a space.
+         */
+        INIT_OR_SPACE,
+
+        /**
+         * The last scanned character is an even digit: the student id is being scanned and (for now) it's even.
+         */
+        EVEN,
+
+        /**
+         * The last scanned character is an odd digit: the student id is being scanned and (for now) it's odd.
+         */
+        ODD,
+
+        /**
+         * The last scanned substring is a sequence of whitespace characters following an even student id.
+         */
+        SPACE_AFTER_EVEN_ID,
+
+        /**
+         * The last scanned substring is a sequence of whitespace characters following an odd student id.
+         */
+        SPACE_AFTER_ODD_ID,
+
+        /**
+         * The string is valid: after the student id there is a surname that starts with the correct letter.
+         */
+        VALID,
+
+        /**
+         * The last scanned substring is a sequence of whitespace characters following the surname.
+         */
+        TRAILING_SPACE,
+
+        /**
+         * The string is not valid.
+         */
+        NOT_VALID
+    }
 }

@@ -11,32 +11,8 @@ import java.util.InputMismatchException;
  */
 public final class ContainsBlockComment {
     /**
-     * Defines the states of the automaton.
-     */
-    private enum States {
-        /**
-         * The last scanned character is {@code '*'}.
-         */
-        SLASH,
-
-        /**
-         * The string contains a non-terminated block comment.
-         */
-        IN_COMMENT,
-
-        /**
-         * The last scanned character is {@code *} when the previous substring was in a comment.
-         */
-        END_ASTERISK,
-
-        /**
-         * The string contains a valid block comment.
-         */
-        VALID
-    }
-
-    /**
      * Checks whether the specified character belongs to the automaton alphabet.
+     *
      * @param c The character to be checked.
      * @return {@code true} if the character is valid; otherwise, {@code false}.
      */
@@ -98,5 +74,30 @@ public final class ContainsBlockComment {
         } catch (InputMismatchException e) {
             System.err.println(e.getMessage());
         }
+    }
+
+    /**
+     * Defines the states of the automaton.
+     */
+    private enum States {
+        /**
+         * The last scanned character is {@code '*'}.
+         */
+        SLASH,
+
+        /**
+         * The string contains a non-terminated block comment.
+         */
+        IN_COMMENT,
+
+        /**
+         * The last scanned character is {@code *} when the previous substring was in a comment.
+         */
+        END_ASTERISK,
+
+        /**
+         * The string contains a valid block comment.
+         */
+        VALID
     }
 }

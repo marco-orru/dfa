@@ -10,37 +10,8 @@ import java.util.InputMismatchException;
  */
 public final class LastThreeA {
     /**
-     * Defines the states of the automaton.
-     */
-    private enum States {
-        /**
-         * The string
-         */
-        INIT,
-
-        /**
-         * The string ends with 'a' (thus, it's valid)
-         */
-        A_1,
-
-        /**
-         * The string ends with 'ab' (thus, it's valid)
-         */
-        A_2,
-
-        /**
-         * The string ends with 'abb' (thus, it's valid)
-         */
-        A_3,
-
-        /**
-         * The string ends with 'bbb' (thus, it's not valid).
-         */
-        INVALID,
-    }
-
-    /**
      * Checks whether the specified character belongs to the automaton alphabet.
+     *
      * @param c The character to be checked.
      * @return {@code true} if the character is valid; otherwise, {@code false}.
      */
@@ -107,5 +78,35 @@ public final class LastThreeA {
         } catch (InputMismatchException e) {
             System.err.println(e.getMessage());
         }
+    }
+
+    /**
+     * Defines the states of the automaton.
+     */
+    private enum States {
+        /**
+         * The string
+         */
+        INIT,
+
+        /**
+         * The string ends with 'a' (thus, it's valid)
+         */
+        A_1,
+
+        /**
+         * The string ends with 'ab' (thus, it's valid)
+         */
+        A_2,
+
+        /**
+         * The string ends with 'abb' (thus, it's valid)
+         */
+        A_3,
+
+        /**
+         * The string ends with 'bbb' (thus, it's not valid).
+         */
+        INVALID,
     }
 }

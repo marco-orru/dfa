@@ -24,67 +24,8 @@ import java.util.InputMismatchException;
  */
 public final class FloatingPoint {
     /**
-     * Defines the states of the automaton.
-     */
-    private enum States {
-        /**
-         * The string is yet to be scanned
-         */
-        INIT,
-
-        /**
-         * The string starts with a sign,
-         */
-        SIGN,
-
-        /**
-         * The last substring scanned is the integral part of the number.
-         */
-        INTEGRAL_PART,
-
-        /**
-         * The last character scanned is a decimal point.
-         */
-        DECIMAL_POINT,
-
-        /**
-         * The last substring scanned is the decimal part of the number.
-         */
-        DECIMAL_PART,
-
-        /**
-         * The last character scanned is the {@code 'e'} symbol, which follows a valid floating point number.
-         */
-        EXP,
-
-        /**
-         * The last character scanned is the sign of the exponent.
-         */
-        EXP_SIGN,
-
-        /**
-         * The last substring scanned is the integral part of the exponent.
-         */
-        EXP_INTEGRAL_PART,
-
-        /**
-         * The last character scanned is a decimal point of the exponent.
-         */
-        EXP_DECIMAL_POINT,
-
-        /**
-         * The last substring scanned is the decimal part of the exponent.
-         */
-        EXP_DECIMAL_PART,
-
-        /**
-         * The string is invalid.
-         */
-        INVALID
-    }
-
-    /**
      * Checks whether the specified character belongs to the automaton alphabet.
+     *
      * @param c The character to be checked.
      * @return {@code true} if the character is valid; otherwise, {@code false}.
      */
@@ -176,7 +117,7 @@ public final class FloatingPoint {
         }
 
         return state == States.INTEGRAL_PART ||
-                state ==  States.DECIMAL_PART ||
+                state == States.DECIMAL_PART ||
                 state == States.EXP_INTEGRAL_PART ||
                 state == States.EXP_DECIMAL_PART;
     }
@@ -190,5 +131,65 @@ public final class FloatingPoint {
         } catch (InputMismatchException e) {
             System.err.println(e.getMessage());
         }
+    }
+
+    /**
+     * Defines the states of the automaton.
+     */
+    private enum States {
+        /**
+         * The string is yet to be scanned
+         */
+        INIT,
+
+        /**
+         * The string starts with a sign,
+         */
+        SIGN,
+
+        /**
+         * The last substring scanned is the integral part of the number.
+         */
+        INTEGRAL_PART,
+
+        /**
+         * The last character scanned is a decimal point.
+         */
+        DECIMAL_POINT,
+
+        /**
+         * The last substring scanned is the decimal part of the number.
+         */
+        DECIMAL_PART,
+
+        /**
+         * The last character scanned is the {@code 'e'} symbol, which follows a valid floating point number.
+         */
+        EXP,
+
+        /**
+         * The last character scanned is the sign of the exponent.
+         */
+        EXP_SIGN,
+
+        /**
+         * The last substring scanned is the integral part of the exponent.
+         */
+        EXP_INTEGRAL_PART,
+
+        /**
+         * The last character scanned is a decimal point of the exponent.
+         */
+        EXP_DECIMAL_POINT,
+
+        /**
+         * The last substring scanned is the decimal part of the exponent.
+         */
+        EXP_DECIMAL_PART,
+
+        /**
+         * The string is invalid.
+         */
+        INVALID
     }
 }

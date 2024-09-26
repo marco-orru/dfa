@@ -10,26 +10,6 @@ import java.util.InputMismatchException;
  */
 public final class NameMinusOne {
     /**
-     * Defines the states of the automaton.
-     */
-    private enum States {
-        /**
-         * The string is valid.
-         */
-        VALID,
-
-        /**
-         * One replacement has occurred in the string (it's still valid).
-         */
-        REPLACEMENT_OCCURRED,
-
-        /**
-         * More than one replacement has occurred in the string (thus, it's invalid).
-         */
-        INVALID
-    }
-
-    /**
      * Scans the input string and checks whether the string is valid for the automaton.
      *
      * @param s the input string to be scanned
@@ -76,5 +56,25 @@ public final class NameMinusOne {
             throw new InputMismatchException("A name must be provided");
 
         System.out.println("The input string is " + (scan(args[0], args[1]) ? "valid" : "not valid"));
+    }
+
+    /**
+     * Defines the states of the automaton.
+     */
+    private enum States {
+        /**
+         * The string is valid.
+         */
+        VALID,
+
+        /**
+         * One replacement has occurred in the string (it's still valid).
+         */
+        REPLACEMENT_OCCURRED,
+
+        /**
+         * More than one replacement has occurred in the string (thus, it's invalid).
+         */
+        INVALID
     }
 }
