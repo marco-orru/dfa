@@ -38,10 +38,10 @@ public final class NotThreeZero {
     private static final Set<Character> Alphabet = Set.of('0', '1');
 
     /**
-     * Scans the input string and checks if it contains three consecutive {@code '0'} characters.
+     * Scans the input string and checks whether it does not contain three consecutive {@code '0'} characters.
      *
      * @param s the input string to be scanned
-     * @return {@code true} if the string contains three consecutive {@code '0'} characters;
+     * @return {@code true} if the string does not contain three consecutive {@code '0'} characters;
      *         otherwise, {@code false}
      */
     private static boolean scan(String s) {
