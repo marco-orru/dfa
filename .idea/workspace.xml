@@ -4,15 +4,12 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="499b4dfc-ddf0-4915-b202-61bb156dd8b7" name="Changes" comment="FloatingPoint">
+    <list default="true" id="499b4dfc-ddf0-4915-b202-61bb156dd8b7" name="Changes" comment="Exception handling and printing">
+      <change afterPath="$PROJECT_DIR$/src/dfa/BlockComment.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/README.md" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/dfa/FloatingPoint.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/dfa/FloatingPoint.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/dfa/JavaIdentifier.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/dfa/JavaIdentifier.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/dfa/LastThreeA.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/dfa/LastThreeA.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/dfa/NotThreeZero.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/dfa/NotThreeZero.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/dfa/StudentId.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/dfa/StudentId.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/dfa/StudentIdInv.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/dfa/StudentIdInv.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/dfa/StudentIdSpace.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/dfa/StudentIdSpace.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/dfa/ThreeZero.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/dfa/ThreeZero.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/dfa/NameMinusOne.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/dfa/NameMinusOne.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -55,6 +52,7 @@
   </component>
   <component name="PropertiesComponent"><![CDATA[{
   "keyToString": {
+    "Application.BlockComment.executor": "Run",
     "Application.FloatingPoint.executor": "Run",
     "Application.JavaIdentifier.executor": "Debug",
     "Application.LastThreeA.executor": "Run",
@@ -83,10 +81,10 @@
   }
 }]]></component>
   <component name="RunManager">
-    <configuration name="FloatingPoint" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="dfa.FloatingPoint" />
+    <configuration name="BlockComment" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="dfa.BlockComment" />
       <module name="dfa" />
-      <option name="PROGRAM_PARAMETERS" value="1.2.3dd" />
+      <option name="PROGRAM_PARAMETERS" value="/**/***/" />
       <extension name="coverage">
         <pattern>
           <option name="PATTERN" value="dfa.*" />
@@ -99,7 +97,7 @@
     </configuration>
     <recent_temporary>
       <list>
-        <item itemvalue="Application.FloatingPoint" />
+        <item itemvalue="Application.BlockComment" />
       </list>
     </recent_temporary>
   </component>
@@ -119,7 +117,7 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1727345624468</updated>
-      <workItem from="1727345625370" duration="13110000" />
+      <workItem from="1727345625370" duration="14175000" />
     </task>
     <task id="LOCAL-00001" summary="ThreeZero">
       <option name="closed" value="true" />
@@ -233,7 +231,15 @@
       <option name="project" value="LOCAL" />
       <updated>1727364228403</updated>
     </task>
-    <option name="localTasksCounter" value="15" />
+    <task id="LOCAL-00015" summary="Exception handling and printing">
+      <option name="closed" value="true" />
+      <created>1727364430369</created>
+      <option name="number" value="00015" />
+      <option name="presentableId" value="LOCAL-00015" />
+      <option name="project" value="LOCAL" />
+      <updated>1727364430369</updated>
+    </task>
+    <option name="localTasksCounter" value="16" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -250,6 +256,7 @@
     <MESSAGE value="LastThreeA" />
     <MESSAGE value="NameMinusOne" />
     <MESSAGE value="FloatingPoint" />
-    <option name="LAST_COMMIT_MESSAGE" value="FloatingPoint" />
+    <MESSAGE value="Exception handling and printing" />
+    <option name="LAST_COMMIT_MESSAGE" value="Exception handling and printing" />
   </component>
 </project>

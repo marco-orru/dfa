@@ -69,5 +69,7 @@ The following DFAs are implemented:
 + `LastThreeA`: checks whether the last three characters of a string contains at least an `'a'` character.
 + `NameMinusOne`: checks whether a string is composed by a name (passed as the second argument) with at most one letter replaced.
 + `FloatingPoint`: checks whether a string represents a floating point number, with optional sign and exponent.
++ `BlockComment`: checks whether a string represents a block-comment (delimited by `"/*"` and `"*/"`), without nesting.
++ `ContainsBlockComment`: checks whether a string contains a block-comment (delimited by `"/*"` and `"*/"`).
 
 More information about the purpose of each DFA is included in the class documentation comments.

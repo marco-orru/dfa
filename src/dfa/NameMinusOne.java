@@ -9,6 +9,9 @@ import java.util.InputMismatchException;
  * Adding or removing a character will invalidate the string: only replacements are considered valid.
  */
 public final class NameMinusOne {
+    /**
+     * Defines the states of the automaton.
+     */
     private enum States {
         /**
          * The string is valid.

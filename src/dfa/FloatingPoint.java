@@ -23,6 +23,9 @@ import java.util.InputMismatchException;
  * In both segments, it's not necessary that a decimal point is preceded by a non-empty sequence of digits.
  */
 public final class FloatingPoint {
+    /**
+     * Defines the states of the automaton.
+     */
     private enum States {
         /**
          * The string is yet to be scanned
