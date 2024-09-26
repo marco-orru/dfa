@@ -48,9 +48,14 @@ This automaton is implemented in `dfa.ThreeZero` Java class.
 
 Automata source files are stored into the `src/dfa` folder.
 Each automaton is implemented as a separate Java class with a `main` method which passes its first argument to the `scan`
-method, which returns a boolean value indicating whether the string produces an accept state.
+method, and prints whether the string produces a valid accept state.
+
+The code in the `scan` method will always scan the entire input string (even if a valid accept state that cannot transition
+to other invalid states is reached). Moreover, if a character in the string does not belong to the DFA alphabet, a
+`InputMismatchException` is thrown.
 
 ## Implemented automata
 
 The following DFAs are implemented:
-+ `ThreeZero`: checks if a string contains three consecutive `0` characters.
++ `ThreeZero`: checks whether a string does contain three consecutive `0` characters.
++ `NotThreeZero`: checks whether a string does not contain three consecutive `0` characters.

@@ -1,11 +1,12 @@
 package dfa;
 
-import java.util.*;
+import java.util.InputMismatchException;
+import java.util.Set;
 
 /**
- * Implements a DFA that checks if a string contains three consecutive {@code '0'} characters.
+ * Implements a DFA that checks whether a string does not contain three consecutive {@code '0'} characters.
  */
-public final class ThreeZero {
+public final class NotThreeZero {
     /**
      * Defines the states of the automaton.
      */
@@ -31,7 +32,6 @@ public final class ThreeZero {
          */
         FOUND_THREE
     }
-
     /**
      * The accepted alphabet of the DFA.
      */
@@ -73,7 +73,7 @@ public final class ThreeZero {
             }
         }
 
-        return state == States.FOUND_THREE;
+        return state != States.FOUND_THREE;
     }
 
     public static void main(String[] args) {
