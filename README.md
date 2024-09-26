@@ -70,6 +70,6 @@ The following DFAs are implemented:
 + `NameMinusOne`: checks whether a string is composed by a name (passed as the second argument) with at most one letter replaced.
 + `FloatingPoint`: checks whether a string represents a floating point number, with optional sign and exponent.
 + `BlockComment`: checks whether a string represents a block-comment (delimited by `"/*"` and `"*/"`), without nesting.
-+ `ContainsBlockComment`: checks whether a string contains a block-comment (delimited by `"/*"` and `"*/"`).
++ `ContainsBlockComment`: checks whether a string does not contain any comment, or contains a valid block comment.
 
 More information about the purpose of each DFA is included in the class documentation comments.

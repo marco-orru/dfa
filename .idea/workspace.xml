@@ -4,12 +4,10 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="499b4dfc-ddf0-4915-b202-61bb156dd8b7" name="Changes" comment="Exception handling and printing">
-      <change afterPath="$PROJECT_DIR$/src/dfa/BlockComment.java" afterDir="false" />
+    <list default="true" id="499b4dfc-ddf0-4915-b202-61bb156dd8b7" name="Changes" comment="BlockComment">
+      <change afterPath="$PROJECT_DIR$/src/dfa/ContainsBlockComment.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/README.md" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/dfa/FloatingPoint.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/dfa/FloatingPoint.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/dfa/NameMinusOne.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/dfa/NameMinusOne.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -53,6 +51,7 @@
   <component name="PropertiesComponent"><![CDATA[{
   "keyToString": {
     "Application.BlockComment.executor": "Run",
+    "Application.ContainsBlockComment.executor": "Run",
     "Application.FloatingPoint.executor": "Run",
     "Application.JavaIdentifier.executor": "Debug",
     "Application.LastThreeA.executor": "Run",
@@ -81,10 +80,10 @@
   }
 }]]></component>
   <component name="RunManager">
-    <configuration name="BlockComment" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="dfa.BlockComment" />
+    <configuration name="ContainsBlockComment" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="dfa.ContainsBlockComment" />
       <module name="dfa" />
-      <option name="PROGRAM_PARAMETERS" value="/**/***/" />
+      <option name="PROGRAM_PARAMETERS" value="aa/*aa" />
       <extension name="coverage">
         <pattern>
           <option name="PATTERN" value="dfa.*" />
@@ -97,7 +96,7 @@
     </configuration>
     <recent_temporary>
       <list>
-        <item itemvalue="Application.BlockComment" />
+        <item itemvalue="Application.ContainsBlockComment" />
       </list>
     </recent_temporary>
   </component>
@@ -117,7 +116,7 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1727345624468</updated>
-      <workItem from="1727345625370" duration="14175000" />
+      <workItem from="1727345625370" duration="14669000" />
     </task>
     <task id="LOCAL-00001" summary="ThreeZero">
       <option name="closed" value="true" />
@@ -239,7 +238,23 @@
       <option name="project" value="LOCAL" />
       <updated>1727364430369</updated>
     </task>
-    <option name="localTasksCounter" value="16" />
+    <task id="LOCAL-00016" summary="BlockComment">
+      <option name="closed" value="true" />
+      <created>1727365392485</created>
+      <option name="number" value="00016" />
+      <option name="presentableId" value="LOCAL-00016" />
+      <option name="project" value="LOCAL" />
+      <updated>1727365392485</updated>
+    </task>
+    <task id="LOCAL-00017" summary="BlockComment">
+      <option name="closed" value="true" />
+      <created>1727365422624</created>
+      <option name="number" value="00017" />
+      <option name="presentableId" value="LOCAL-00017" />
+      <option name="project" value="LOCAL" />
+      <updated>1727365422624</updated>
+    </task>
+    <option name="localTasksCounter" value="18" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -257,6 +272,7 @@
     <MESSAGE value="NameMinusOne" />
     <MESSAGE value="FloatingPoint" />
     <MESSAGE value="Exception handling and printing" />
-    <option name="LAST_COMMIT_MESSAGE" value="Exception handling and printing" />
+    <MESSAGE value="BlockComment" />
+    <option name="LAST_COMMIT_MESSAGE" value="BlockComment" />
   </component>
 </project>
