@@ -4,12 +4,13 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="499b4dfc-ddf0-4915-b202-61bb156dd8b7" name="Changes" comment="ThreeZero">
-      <change afterPath="$PROJECT_DIR$/src/dfa/NotThreeZero.java" afterDir="false" />
+    <list default="true" id="499b4dfc-ddf0-4915-b202-61bb156dd8b7" name="Changes" comment="NotThreeZero (fixed docs)">
+      <change afterPath="$PROJECT_DIR$/.idea/inspectionProfiles/Project_Default.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/dfa/JavaIdentifier.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/README.md" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/dfa.iml" beforeDir="false" afterPath="$PROJECT_DIR$/dfa.iml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/dfa/ThreeZero.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/dfa/ThreeZero.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/dfa/NotThreeZero.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/dfa/NotThreeZero.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -38,6 +39,9 @@
     "accountId": "f6511f40-920e-42bd-a8d0-5f815aa0b4c2"
   }
 }]]></component>
+  <component name="ProblemsViewState">
+    <option name="selectedTabId" value="ProjectErrors" />
+  </component>
   <component name="ProjectColorInfo"><![CDATA[{
   "associatedIndex": 6
 }]]></component>
@@ -49,6 +53,7 @@
   </component>
   <component name="PropertiesComponent"><![CDATA[{
   "keyToString": {
+    "Application.JavaIdentifier.executor": "Run",
     "Application.NotThreeZero.executor": "Run",
     "Application.ThreeZero.executor": "Run",
     "Downloaded.Files.Path.Enabled": "false",
@@ -56,6 +61,7 @@
     "Repository.Attach.JavaDocs": "false",
     "Repository.Attach.Sources": "false",
     "RunOnceActivity.ShowReadmeOnStart": "true",
+    "SHARE_PROJECT_CONFIGURATION_FILES": "true",
     "git-widget-placeholder": "master",
     "kotlin-language-version-configured": "true",
     "node.js.detected.package.eslint": "true",
@@ -63,9 +69,31 @@
     "node.js.selected.package.eslint": "(autodetect)",
     "node.js.selected.package.tslint": "(autodetect)",
     "nodejs_package_manager_path": "npm",
+    "run.code.analysis.last.selected.profile": "pProject Default",
     "vue.rearranger.settings.migration": "true"
   }
 }]]></component>
+  <component name="RunManager">
+    <configuration name="JavaIdentifier" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="dfa.JavaIdentifier" />
+      <module name="dfa" />
+      <option name="PROGRAM_PARAMETERS" value="1_test" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="dfa.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <recent_temporary>
+      <list>
+        <item itemvalue="Application.JavaIdentifier" />
+      </list>
+    </recent_temporary>
+  </component>
   <component name="SharedIndexes">
     <attachedChunks>
       <set>
@@ -82,7 +110,7 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1727345624468</updated>
-      <workItem from="1727345625370" duration="3237000" />
+      <workItem from="1727345625370" duration="5692000" />
     </task>
     <task id="LOCAL-00001" summary="ThreeZero">
       <option name="closed" value="true" />
@@ -92,7 +120,23 @@
       <option name="project" value="LOCAL" />
       <updated>1727348061440</updated>
     </task>
-    <option name="localTasksCounter" value="2" />
+    <task id="LOCAL-00002" summary="NotThreeZero">
+      <option name="closed" value="true" />
+      <created>1727348902717</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1727348902717</updated>
+    </task>
+    <task id="LOCAL-00003" summary="NotThreeZero (fixed docs)">
+      <option name="closed" value="true" />
+      <created>1727348974394</created>
+      <option name="number" value="00003" />
+      <option name="presentableId" value="LOCAL-00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1727348974394</updated>
+    </task>
+    <option name="localTasksCounter" value="4" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -100,6 +144,8 @@
   </component>
   <component name="VcsManagerConfiguration">
     <MESSAGE value="ThreeZero" />
-    <option name="LAST_COMMIT_MESSAGE" value="ThreeZero" />
+    <MESSAGE value="NotThreeZero" />
+    <MESSAGE value="NotThreeZero (fixed docs)" />
+    <option name="LAST_COMMIT_MESSAGE" value="NotThreeZero (fixed docs)" />
   </component>
 </project>

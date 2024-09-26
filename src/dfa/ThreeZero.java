@@ -80,6 +80,6 @@ public final class ThreeZero {
         if (args.length < 1)
             throw new InputMismatchException("An input string must be provided");
 
-        System.out.println("The input string is " + (scan(args[0]) ? "valid" : "invalid"));
+        System.out.println("The input string is " + (scan(args[0]) ? "valid" : "not valid"));
     }
 }

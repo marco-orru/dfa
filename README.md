@@ -59,3 +59,4 @@ to other invalid states is reached). Moreover, if a character in the string does
 The following DFAs are implemented:
 + `ThreeZero`: checks whether a string does contain three consecutive `0` characters.
 + `NotThreeZero`: checks whether a string does not contain three consecutive `0` characters.
++ `JavaIdentifier`: checks whether a string is a valid Java identifier.
