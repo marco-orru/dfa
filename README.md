@@ -50,6 +50,9 @@ Automata source files are stored into the `src/dfa` folder.
 Each automaton is implemented as a separate Java class with a `main` method which passes its first argument to the `scan`
 method, and prints whether the string produces a valid accept state.
 
+In the state transitions of the automata only the input character that change the state are shown; the characters that 
+keep the state the same are omitted.
+
 The code in the `scan` method will always scan the entire input string (even if a valid accept state that cannot transition
 to other invalid states is reached). Moreover, if a character in the string does not belong to the DFA alphabet, a
 `InputMismatchException` is thrown.
@@ -65,5 +68,6 @@ The following DFAs are implemented:
 + `StudentIdInv`: checks whether a string is a surname immediately followed by a valid student identifier.
 + `LastThreeA`: checks whether the last three characters of a string contains at least an `'a'` character.
 + `NameMinusOne`: checks whether a string is composed by a name (passed as the second argument) with at most one letter replaced.
++ `FloatingPoint`: checks whether a string represents a floating point number, with optional sign and exponent.
 
 More information about the purpose of each DFA is included in the class documentation comments.
