@@ -1,6 +1,6 @@
 package dfa;
 
-import java.util.*;
+import java.util.InputMismatchException;
 
 /**
  * Implements a DFA that checks if a string contains three consecutive {@code '0'} characters.
@@ -33,9 +33,13 @@ public final class ThreeZero {
     }
 
     /**
-     * The accepted alphabet of the DFA.
+     * Checks whether the specified character belongs to the automaton alphabet.
+     * @param c The character to be checked.
+     * @return {@code true} if the character is valid; otherwise, {@code false}.
      */
-    private static final Set<Character> Alphabet = Set.of('0', '1');
+    private static boolean isValidCharacter(char c) {
+        return c == '0' || c == '1';
+    }
 
     /**
      * Scans the input string and checks if it contains three consecutive {@code '0'} characters.
@@ -51,7 +55,7 @@ public final class ThreeZero {
         while (i < s.length()) {
             final var c = s.charAt(i++);
 
-            if (!Alphabet.contains(c))
+            if (!isValidCharacter(c))
                 throw new InputMismatchException("Invalid character at index %d in input string %s".formatted(i, s));
 
             switch (state) {

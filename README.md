@@ -60,3 +60,6 @@ The following DFAs are implemented:
 + `ThreeZero`: checks whether a string does contain three consecutive `0` characters.
 + `NotThreeZero`: checks whether a string does not contain three consecutive `0` characters.
 + `JavaIdentifier`: checks whether a string is a valid Java identifier.
++ `StudentId`: checks whether a string is a valid student identifier immediately followed by a surname.
+
+More information about the purpose of each DFA is included in the class documentation comments.
