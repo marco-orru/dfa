@@ -1,5 +1,7 @@
 # DFA
 
+> Part of a University project for the class _Formal Languages and Compilers_ (**[LFT](https://laurea.informatica.unito.it/do/corsi.pl/Show?_id=tzye)**, *Linguaggi Formali e Traduttori*, UNITO Informatica).
+
 This repository contains the implementation of some DFAs in Java.
 
 ## What is a DFA?
